@@ -75,17 +75,44 @@ x=0
 #     for line in file:
 #         print(line)
 
-class Animal:
-    def __init__(self, voice):
-        self.voice = voice
-        print(voice)
-cat= Animal("hello")
+# class Animal:
+#     def __init__(self, voice):
+#         self.voice = voice
+#         print(voice)
+# cat= Animal("hello")
 
 # cat = Animal('Meow')
 # print(cat.voice)    # => Meow
 #
 # dog = Animal('Woof')
 # print(dog.voice)    # => Woof
+# import time
+#
+# def timer(func):
+#     def wrapper(*args):
+#         start = time.time()
+#         result = func(*args)
+#         end = time.time()
+#         print(f"Took {end-start:2f}s")
+#         return result
+#     return wrapper
+# @timer
+# def slow_function():
+#     time.sleep(1)
+#     return "done!!"
+# result = slow_function()
+
+
+# python utility function
+
+def format_username(first_name,last_name):
+
+    first = first_name.strip().lower()
+    last = last_name.strip().lower()
+    return f"{first}.{last}"
+print(format_username("Vivek","DR"))
+
+
 
 
 
