@@ -58,5 +58,4 @@ def load_config(**kwargs):
         "host": kwargs.get("host", "localhost"),
         "port": kwargs.get("port", 8000),
     }
-print(load_config())
 
