@@ -1,4 +1,5 @@
 from collections import Counter,defaultdict
+from itertools import count
 
 # numbers = [1,2,2,3,3,3]
 # count = Counter(numbers)
@@ -37,6 +38,17 @@ employees = [
     ("Sneha", "Finance")
 ]
 print(job_department(employees))
+
+students = [
+    ("Vivek", "A"),
+    ("Anu", "B"),
+    ("Rahul", "A")
+]
+grouped = defaultdict(lambda :{"count" : 0 , "students" :[]})
+for name, grade in students:
+    grouped[grade]["count"] += 1
+    grouped[grade]["students"].append(name)
+print(dict(grouped))
 
 
 
